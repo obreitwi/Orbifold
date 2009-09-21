@@ -28,6 +28,7 @@ protected:
 
 public:
 
+};
 }
 
 #endif

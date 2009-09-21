@@ -15,6 +15,7 @@
 #include <Ogre/OgreTimer.h>
 #include <OIS/OISMouse.h>
 #include <OIS/OISKeyboard.h>
+#include <boost/math/special_functions/atanh.hpp>
 
 namespace Orbifold {
   
