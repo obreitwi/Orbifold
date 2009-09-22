@@ -12,6 +12,8 @@
 #include "PlayState.h"
 #include "GameState.h"
 
+namespace Orbifold {
+
 class IntroState : public GameState {
 public:
 	~IntroState();
@@ -42,4 +44,5 @@ private:
 	
 	static IntroState *mIntroState;
 };
+}
 #endif

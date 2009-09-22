@@ -9,6 +9,8 @@
 
 #include "IntroState.h"
 
+namespace Orbifold {
+
 IntroState* IntroState::mIntroState;
 
 void IntroState::enter(){
@@ -30,3 +32,5 @@ void IntroState::exit() {
 }
 
 IntroState::~IntroState(){}
+
+}

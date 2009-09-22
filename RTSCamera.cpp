@@ -12,6 +12,7 @@
 #include "RTSCamera.h"
 #include "Game.h"
 
+
 class RTSCamera;
 
 namespace Orbifold {

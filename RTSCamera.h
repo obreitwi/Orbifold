@@ -17,6 +17,7 @@
 #include <OIS/OISKeyboard.h>
 #include <boost/math/special_functions/atanh.hpp>
 
+
 namespace Orbifold {
   
   class BaseAnim {
@@ -35,15 +36,15 @@ namespace Orbifold {
     // they should represent slowdown and acceleration with
     // air resistance
     void xAcc(double vx0, unsigned long tx) {
-      mVelocity.x = mMv*tanh(tx + atanh(vx0));      
+      mVelocity.x = mMv*tanh(tx + boost::math::atanh(vx0));      
     }
     
     void yAcc(double vy0, unsigned long ty) {
-      mVelocity.y = mMv*tanh(ty + atanh(vy0));
+      mVelocity.y = mMv*tanh(ty + boost::math::atanh(vy0));
     }
     
     void zAcc(double vz0, unsigned long tz) {
-      mVelocity.z = mMv*tanh(tz - atanh(vz0));
+      mVelocity.z = mMv*tanh(tz - boost::math::atanh(vz0));
     }
     
     void xSlow(double vx0, unsigned long tx) {

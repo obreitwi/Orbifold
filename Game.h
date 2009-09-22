@@ -10,7 +10,8 @@
 #ifndef GAME_H
 #define GAME_H
 
-#if OGRE_PLATFORM == OGRE_PLATFORM_APPLE
+#if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
+#elif OGRE_PLATFORM == OGRE_PLATFORM_APPLE
 #include <Carbon/Carbon.h>
 #endif
 
